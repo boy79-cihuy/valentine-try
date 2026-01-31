@@ -8,14 +8,14 @@ function checkAnswer() {
   const benar = document.getElementById("img-correct");
   const salah = document.getElementById("img-wrong");
 
-  if (answer === "esmosi") {
+  if (answer === "cokelat") {
     result.textContent = "INII BARUU KAMUU!!";
     result.style.color = "green";
     benar.classList.remove("hidden");
     salah.classList.add("hidden");
     btn.classList.remove("hidden");
   } else {
-    result.textContent = "AH PAYAHHH, COBA LAGI DONG 😏 Ah ku kasi klu dehh, klunya emosi";
+    result.textContent = "AH PAYAHHH, COBA LAGI DONG 😏";
     result.style.color = "red";
     salah.classList.remove("hidden");
     benar.classList.add("hidden");
@@ -38,9 +38,6 @@ function goToStep(step) {
   }
 } nextAfterSong.classList.remove("hidden");
 
-function notif() {
-  alert("Coklat kamu udah di depan rumah 🍫🔥\nAmbil donggg panas 😭");
-}
 
 
 // --- RUNAWAY NO BUTTON ---
@@ -134,7 +131,7 @@ function startGame() {
       document.getElementById("score").innerText = score + " / 5";
 
       // MENANG
-      if (score >= 1) {
+      if (score >= 5) {
         gameOver = true;
         clearInterval(gameInterval);
 
@@ -176,4 +173,5 @@ function openMail(btn) {
   setTimeout(() => {
     goToStep(5);
   }, 700);
+
 }
