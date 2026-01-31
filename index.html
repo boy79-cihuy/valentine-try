@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Untuk Kamu 🤍</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- AUDIO -->
+<audio id="lagu" preload="auto">
+  <source src="cantik.mp3" type="audio/mpeg">
+</audio>
+
+<!-- STEP 0 -->
+<div class="container" id="step0">
+  <h2 class="quiz-title">🎯 Tebak-Tebakan!</h2>
+  <p class="quiz-question">Es es apa yang bikin kesel?</p>
+
+  <input
+    type="text"
+    id="answer"
+    class="quiz-input"
+    placeholder="Jawaban kamu..."
+  /> <br>
+
+  <button class="quiz-button" onclick="checkAnswer()">Submit</button>
+
+  <p id="result"></p>
+
+  <img id="img-correct" src="https://media.tenor.com/W9YoZ1h0sVgAAAAC/zh.gif" class="img hidden">
+  <img id="img-wrong" src="https://media.tenor.com/JHG8_5ZObrAAAAAC/nailong-yellow-dragon.gif" class="img hidden">
+
+  <button id="nextStepBtn" class="next-btn hidden" onclick="goToStep(1)">
+    Next ➡️
+  </button>
+</div>
+
+<!-- STEP 1 -->
+<div class="container hidden" id="step1">
+  <h1>Hai…</h1>
+  <p>
+    Aku cuma mau bilang…<br><br>
+    Aku nggak lagi ngutang pulsa,<br>
+    nggak lagi jualan cilok,<br>
+    dan juga nggak nyari kucing hilang 🐱<br><br>
+    Aku cuma mau ngomong sesuatu<br>
+    yang bikin jantungku bergetar 💥 <br> <br>
+    kalo kamu kepooooooo <br>
+    klik yes dong
+  </p>
+  <button class="yes-btn" onclick="goToStep(2)">Yes</button>
+  <button id="noBtn" class="no-btn">No</button>
+</div>
+
+<!-- STEP 2 -->
+ <div class="container hidden" id="step2">
+  <h2>Kumpulin 5 kepala alboy dulu</h2>
+  
+<audio id="bgmGame" src="game.mp3" loop></audio>
+<audio id="soundBomb" src="bom.mp3"></audio>
+<audio id="soundWin" src="win.mp3"></audio>
+
+  <div id="gameArea"></div>
+  <p id="score">0 / 5</p>
+
+  <div id="gameOverScreen" class="hidden">
+    <img src="topi.jpg" class="img">
+    <button class="yes-btn"
+    onclick="restartGame()">Ulangi Permainan</button>
+  </div>
+</div>
+
+
+
+  <!-- STEP 3 -->
+ <div class="container hidden" id="step3">
+  <h2 class="fade delay1">Hai Cakep💖</h2>
+  <img src="lop.jpeg" class="fade delay2 img">
+  <p class="fade delay2">
+    06-09-2022 <br>
+    Saat pertama kita jadian <br>
+    itu jujur ga nyangka banget, padahal aku kira kamu suka wibu cebol jelek itu <br>
+    eh ternyata perasaan kita sama sama satu eheeh
+  </p>
+  <img src="kue.jpeg" class="fade delay3 img">
+  <p class="fade delay3">
+    10-12-2022 <br>
+    waktu merayakan ultahmu <br>
+    sumpa disana happy banget bisa ngerayain ultahmu <br>
+    kita timezonean, beli roti o, cetakan foto juga masi tersimpan
+  </p>
+
+  <!-- MUNCUL SETELAH LAGU SELESAI -->
+  <button id="nextAfterSong" class="hidden yes-btn fade delay5" onclick="goToStep(4)">
+    Lanjut ➡️
+  </button>
+</div>
+
+
+<!-- STEP 3 -->
+<div class="container hidden" id="step4">
+    <h2>OIYAAAA</h2>
+    <p>
+      ada lagi 1 yang belum <br>
+      aku sebenarnya ada 1 surat lagi untukmu 💌
+    </p>
+
+    <button class="mail-btn" onclick="openMail(this)">
+      <span class="btn-text">Cek Surat</span>
+      <img src="bom.png" class="btn-img" alt="mail">
+    </button>
+  </div>
+
+  <!-- STEP 2 -->
+  
+    <div class="card hidden" id="step5"> 
+    <h1>Happy Valentine 🤍</h1>
+
+    <p>Kata orang cinta itu ribet.<br>
+    Buat gue? Enggak.<br>
+    Ribetnya cuma satu:<br>
+    gimana caranya tiap hari pura-pura biasa aja<br>
+    padahal tiap lihat senyum lo,<br>
+    hati gue langsung nggak sopan.</p>
+
+    <p>Valentine katanya cuma sehari.<br>
+    Tapi gue orangnya konsisten.<br>
+    Suka lo tuh proyek jangka panjang,<br>
+    bukan diskonan musiman.</p>
+
+    <p>Gue nggak janji jadi yang paling romantis,<br>
+    tapi gue janji:<br>
+    kalau lo capek sama dunia,<br>
+    gue siap jadi tempat lo ngeluh<br>
+    tanpa nyela,<br>
+    tanpa sok bijak,<br>
+    cukup nemenin sambil bilang,<br>
+    “Tenang… ada gue.”</p>
+
+    <p>Happy Valentine.<br>
+    Dari gue yang mungkin nyebelin,<br>
+    sedikit tengil,<br>
+    tapi serius kalau soal lo. ❤️</p>
+
+    <div class="signature">
+      — Alboy
+    </div>
+    </div>
+  
+
+<script src="kode.js"></script>
+</body>
+</html>
