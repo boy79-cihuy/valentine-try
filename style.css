@@ -371,7 +371,9 @@ button {
   letter-spacing: 1px;
   pointer-events: none;
   z-index: 999;
+    
   text-shadow: 0 0 8px rgba(255, 105, 180, 0.6);
 }
+
 
 
