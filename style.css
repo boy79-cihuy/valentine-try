@@ -363,9 +363,10 @@ button {
 
  .footer {
   position: fixed;
-  bottom: 30px;
+  bottom: 10px;
   width: 100%;
   text-align: center;
+  align-items: end;
   font-size: 13px;
   color: rgb(255, 255, 255);
   letter-spacing: 1px;
@@ -374,6 +375,7 @@ button {
     
   text-shadow: 0 0 8px rgba(255, 105, 180, 0.6);
 }
+
 
 
 
