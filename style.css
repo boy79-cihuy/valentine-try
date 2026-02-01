@@ -75,7 +75,7 @@ body::before {
    ============================================================ */
 h1, h2 {
   color: #ff2f6d;
-  font-weight: 650;
+  font-weight: 800;
   letter-spacing: 0.5px;
   text-shadow: 2px 3px 0 #ffd1dc;
   margin-bottom: 12px;
@@ -379,6 +379,7 @@ button {
   z-index: 9999;
   pointer-events: none;
 }
+
 
 
 
