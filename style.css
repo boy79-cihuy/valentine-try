@@ -5,7 +5,7 @@
 body {
   font-family: "Poppins", sans-serif;
   background: radial-gradient(circle at top, #ffb6c1, #ff5e8e 55%, #b3004b);
-  min-height: 100vh;
+  min-height: 110vh;
   margin: 0;
   color: #fff;
   display: flex;
@@ -316,7 +316,6 @@ button {
       background: rgba(255, 255, 255, 0.9);
       padding: 30px;
       max-width: 70%;
-      height: auto;
       border-radius: 20px;
       box-shadow: 0 15px 30px rgba(0,0,0,0.2);
       text-align: left;
@@ -378,6 +377,7 @@ button {
   z-index: 9999;
   pointer-events: none;
 }
+
 
 
 
