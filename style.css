@@ -15,7 +15,7 @@ body {
   padding-top: 60px;
   overflow-x: hidden;
     position: relative;
-   padding: 70%;
+
 }
 
 
@@ -380,6 +380,7 @@ button {
   z-index: 9999;
   pointer-events: none;
 }
+
 
 
 
